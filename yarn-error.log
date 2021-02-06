@@ -1,5 +1,5 @@
 Arguments: 
-  /snap/node/3292/bin/node /usr/local/bin/yarn add nodemon -d
+  /snap/node/3292/bin/node /usr/local/bin/yarn add body-parser
 
 PATH: 
   /home/matheusp/.zinit/polaris/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/jdk-11.0.10/bin:/usr/lib/jvm/jdk-11.0.10/bin
@@ -20,11 +20,16 @@ npm manifest:
   {
     "name": "secao9",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "./src/Server.js",
     "author": "Matheus Pedro <matheus.pedro1214@gmail.com>",
     "license": "MIT",
+    "scripts": {
+      "start": "nodemon"
+    },
     "dependencies": {
-      "express": "^4.17.1",
+      "express": "^4.17.1"
+    },
+    "devDependencies": {
       "nodemon": "^2.0.7"
     }
   }
